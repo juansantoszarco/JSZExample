@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0499592689EBEB8DD606BC94 /* libPods-JSZExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9F8F6C9399AC65DD031CD7 /* libPods-JSZExample.a */; };
 		CF1A8A5F1E5ED3E0001DC6F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A5E1E5ED3E0001DC6F0 /* main.m */; };
 		CF1A8A621E5ED3E0001DC6F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A611E5ED3E0001DC6F0 /* AppDelegate.m */; };
 		CF1A8A651E5ED3E0001DC6F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A641E5ED3E0001DC6F0 /* ViewController.m */; };
 		CF1A8A681E5ED3E0001DC6F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1A8A661E5ED3E0001DC6F0 /* Main.storyboard */; };
 		CF1A8A6A1E5ED3E0001DC6F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1A8A691E5ED3E0001DC6F0 /* Assets.xcassets */; };
 		CF1A8A6D1E5ED3E0001DC6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1A8A6B1E5ED3E0001DC6F0 /* LaunchScreen.storyboard */; };
+		CF1A8A7B1E5ED79B001DC6F0 /* JSZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A7A1E5ED79B001DC6F0 /* JSZTableViewCell.m */; };
+		CF1A8A7E1E5ED7B0001DC6F0 /* JSZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A7D1E5ED7B0001DC6F0 /* JSZModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66471406D192F7DFA6B12D4E /* Pods-JSZExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSZExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JSZExample/Pods-JSZExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9F8F6C9399AC65DD031CD7 /* libPods-JSZExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JSZExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8E46242DB84325D180FB084 /* Pods-JSZExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSZExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-JSZExample/Pods-JSZExample.release.xcconfig"; sourceTree = "<group>"; };
 		CF1A8A5A1E5ED3E0001DC6F0 /* JSZExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSZExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF1A8A5E1E5ED3E0001DC6F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF1A8A601E5ED3E0001DC6F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		CF1A8A691E5ED3E0001DC6F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1A8A6C1E5ED3E0001DC6F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1A8A6E1E5ED3E0001DC6F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1A8A791E5ED79B001DC6F0 /* JSZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSZTableViewCell.h; sourceTree = "<group>"; };
+		CF1A8A7A1E5ED79B001DC6F0 /* JSZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZTableViewCell.m; sourceTree = "<group>"; };
+		CF1A8A7C1E5ED7B0001DC6F0 /* JSZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSZModel.h; sourceTree = "<group>"; };
+		CF1A8A7D1E5ED7B0001DC6F0 /* JSZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0499592689EBEB8DD606BC94 /* libPods-JSZExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		626151E79759AD2D61F86297 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66471406D192F7DFA6B12D4E /* Pods-JSZExample.debug.xcconfig */,
+				B8E46242DB84325D180FB084 /* Pods-JSZExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF1A8A511E5ED3E0001DC6F0 = {
 			isa = PBXGroup;
 			children = (
 				CF1A8A5C1E5ED3E0001DC6F0 /* JSZExample */,
 				CF1A8A5B1E5ED3E0001DC6F0 /* Products */,
+				626151E79759AD2D61F86297 /* Pods */,
+				F1E0769214D0B752A68897BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +80,12 @@
 		CF1A8A5C1E5ED3E0001DC6F0 /* JSZExample */ = {
 			isa = PBXGroup;
 			children = (
-				CF1A8A601E5ED3E0001DC6F0 /* AppDelegate.h */,
-				CF1A8A611E5ED3E0001DC6F0 /* AppDelegate.m */,
-				CF1A8A631E5ED3E0001DC6F0 /* ViewController.h */,
-				CF1A8A641E5ED3E0001DC6F0 /* ViewController.m */,
-				CF1A8A661E5ED3E0001DC6F0 /* Main.storyboard */,
+				CF1A8A781E5ED6EC001DC6F0 /* StoryBoard */,
+				CF1A8A771E5ED6E1001DC6F0 /* AppDelegate */,
+				CF1A8A761E5ED6CE001DC6F0 /* Views */,
+				CF1A8A751E5ED6C7001DC6F0 /* ViewContolers */,
+				CF1A8A741E5ED6C1001DC6F0 /* Models */,
 				CF1A8A691E5ED3E0001DC6F0 /* Assets.xcassets */,
-				CF1A8A6B1E5ED3E0001DC6F0 /* LaunchScreen.storyboard */,
 				CF1A8A6E1E5ED3E0001DC6F0 /* Info.plist */,
 				CF1A8A5D1E5ED3E0001DC6F0 /* Supporting Files */,
 			);
@@ -79,6 +100,59 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CF1A8A741E5ED6C1001DC6F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A7C1E5ED7B0001DC6F0 /* JSZModel.h */,
+				CF1A8A7D1E5ED7B0001DC6F0 /* JSZModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CF1A8A751E5ED6C7001DC6F0 /* ViewContolers */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A631E5ED3E0001DC6F0 /* ViewController.h */,
+				CF1A8A641E5ED3E0001DC6F0 /* ViewController.m */,
+			);
+			name = ViewContolers;
+			sourceTree = "<group>";
+		};
+		CF1A8A761E5ED6CE001DC6F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A791E5ED79B001DC6F0 /* JSZTableViewCell.h */,
+				CF1A8A7A1E5ED79B001DC6F0 /* JSZTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF1A8A771E5ED6E1001DC6F0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A601E5ED3E0001DC6F0 /* AppDelegate.h */,
+				CF1A8A611E5ED3E0001DC6F0 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CF1A8A781E5ED6EC001DC6F0 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A661E5ED3E0001DC6F0 /* Main.storyboard */,
+				CF1A8A6B1E5ED3E0001DC6F0 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		F1E0769214D0B752A68897BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A9F8F6C9399AC65DD031CD7 /* libPods-JSZExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF1A8A711E5ED3E0001DC6F0 /* Build configuration list for PBXNativeTarget "JSZExample" */;
 			buildPhases = (
+				B0F142401A39CFC4AC9AA1F7 /* [CP] Check Pods Manifest.lock */,
 				CF1A8A561E5ED3E0001DC6F0 /* Sources */,
 				CF1A8A571E5ED3E0001DC6F0 /* Frameworks */,
 				CF1A8A581E5ED3E0001DC6F0 /* Resources */,
+				DAC8AF9B6CFFDE516D2CDD4E /* [CP] Embed Pods Frameworks */,
+				01497767873E5E1137224C03 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,14 +222,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01497767873E5E1137224C03 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSZExample/Pods-JSZExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0F142401A39CFC4AC9AA1F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAC8AF9B6CFFDE516D2CDD4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JSZExample/Pods-JSZExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF1A8A561E5ED3E0001DC6F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1A8A7E1E5ED7B0001DC6F0 /* JSZModel.m in Sources */,
 				CF1A8A651E5ED3E0001DC6F0 /* ViewController.m in Sources */,
 				CF1A8A621E5ED3E0001DC6F0 /* AppDelegate.m in Sources */,
 				CF1A8A5F1E5ED3E0001DC6F0 /* main.m in Sources */,
+				CF1A8A7B1E5ED79B001DC6F0 /* JSZTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +397,7 @@
 		};
 		CF1A8A721E5ED3E0001DC6F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66471406D192F7DFA6B12D4E /* Pods-JSZExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSZExample/Info.plist;
@@ -281,6 +409,7 @@
 		};
 		CF1A8A731E5ED3E0001DC6F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E46242DB84325D180FB084 /* Pods-JSZExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JSZExample/Info.plist;
