@@ -7,12 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSZModel.h"
 
 @interface JSZTableViewCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
-@property (strong, nonatomic) IBOutlet UIButton *progressButton;
+
 @property (strong, nonatomic) IBOutlet UILabel *progressLabel;
+
+@property (nonatomic, strong) JSZModel *item;
+
+- (void)setItemInfo:(JSZModel *)item;
 
 @end

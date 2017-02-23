@@ -10,6 +10,9 @@
 #import "JSZTableViewCell.h"
 #import "JSZModel.h"
 
+//static NSString *fileUrl = @"http://scholar.princeton.edu/sites/default/files/oversize_pdf_test_0.pdf"; //100Megas
+
+static NSString *fileUrl = @"http://speedtest.ftp.otenet.gr/files/test10Mb.db";//10 Megas
 
 @interface ViewController () <UITableViewDelegate,UITableViewDataSource>
 
@@ -25,15 +28,23 @@ static NSString *kIdentifier = @"CellIdentifier";
 
 #pragma mark - Custom accessors
 
-- (NSMutableArray *)arrayPods {
+- (void)loadData {
     if (!_arrayPods) {
-        _arrayPods = [@[]mutableCopy];
+        JSZModel *model;
+        _arrayPods = [[NSArray array] mutableCopy];
+        for (int i = 0; i < 10; i++) {
+            
+            model = [[JSZModel alloc] initWith:fileUrl title:[NSString stringWithFormat:@"Es el fichero: %d",i]];
+            [_arrayPods addObject:model];
+        }
     }
-    return _arrayPods;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    CGRect screen = [[UIScreen mainScreen] bounds];
+    self.mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, screen.size.width, screen.size.height) style:UITableViewStylePlain];
 
     [self.view addSubview:self.mainTableView];
     
@@ -42,10 +53,13 @@ static NSString *kIdentifier = @"CellIdentifier";
     
     [self.mainTableView registerClass:[JSZTableViewCell class] forCellReuseIdentifier:kIdentifier];
     
-    [self.mainTableView setEstimatedRowHeight:50.0f];
+    //[self.mainTableView setEstimatedRowHeight:50.0f];
     
     //[self.mainTableView reloadData];
     self.mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    [self.mainTableView setAllowsSelection:NO];
+    [self loadData];
     
 }
 
@@ -63,7 +77,8 @@ static NSString *kIdentifier = @"CellIdentifier";
     JSZModel *info = [_arrayPods objectAtIndex:indexPath.row];
     // Update cell content from data source.
     cell.statusLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    cell.titleLabel.text = @""; //info.name;
+    cell.titleLabel.text = info.title;
+    [cell setItemInfo:info];
     [cell setNeedsUpdateConstraints];
     
     return cell;

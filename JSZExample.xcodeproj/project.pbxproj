@@ -16,6 +16,9 @@
 		CF1A8A6D1E5ED3E0001DC6F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1A8A6B1E5ED3E0001DC6F0 /* LaunchScreen.storyboard */; };
 		CF1A8A7B1E5ED79B001DC6F0 /* JSZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A7A1E5ED79B001DC6F0 /* JSZTableViewCell.m */; };
 		CF1A8A7E1E5ED7B0001DC6F0 /* JSZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A7D1E5ED7B0001DC6F0 /* JSZModel.m */; };
+		CF1A8A821E5EDB02001DC6F0 /* UIColor+HexRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A811E5EDB02001DC6F0 /* UIColor+HexRGB.m */; };
+		CF1A8A871E5EDCEA001DC6F0 /* JNJProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A861E5EDCEA001DC6F0 /* JNJProgressButton.m */; };
+		CF1A8A8B1E5EE2EB001DC6F0 /* BackgroundSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1A8A8A1E5EE2EB001DC6F0 /* BackgroundSessionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		CF1A8A7A1E5ED79B001DC6F0 /* JSZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZTableViewCell.m; sourceTree = "<group>"; };
 		CF1A8A7C1E5ED7B0001DC6F0 /* JSZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSZModel.h; sourceTree = "<group>"; };
 		CF1A8A7D1E5ED7B0001DC6F0 /* JSZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSZModel.m; sourceTree = "<group>"; };
+		CF1A8A801E5EDB02001DC6F0 /* UIColor+HexRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRGB.h"; sourceTree = "<group>"; };
+		CF1A8A811E5EDB02001DC6F0 /* UIColor+HexRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRGB.m"; sourceTree = "<group>"; };
+		CF1A8A851E5EDCEA001DC6F0 /* JNJProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNJProgressButton.h; sourceTree = "<group>"; };
+		CF1A8A861E5EDCEA001DC6F0 /* JNJProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNJProgressButton.m; sourceTree = "<group>"; };
+		CF1A8A891E5EE2EB001DC6F0 /* BackgroundSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundSessionManager.h; sourceTree = "<group>"; };
+		CF1A8A8A1E5EE2EB001DC6F0 /* BackgroundSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundSessionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,8 @@
 		CF1A8A5C1E5ED3E0001DC6F0 /* JSZExample */ = {
 			isa = PBXGroup;
 			children = (
+				CF1A8A881E5EE2B6001DC6F0 /* Manager */,
+				CF1A8A7F1E5EDAFA001DC6F0 /* Extensiones */,
 				CF1A8A781E5ED6EC001DC6F0 /* StoryBoard */,
 				CF1A8A771E5ED6E1001DC6F0 /* AppDelegate */,
 				CF1A8A761E5ED6CE001DC6F0 /* Views */,
@@ -121,8 +132,8 @@
 		CF1A8A761E5ED6CE001DC6F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CF1A8A791E5ED79B001DC6F0 /* JSZTableViewCell.h */,
-				CF1A8A7A1E5ED79B001DC6F0 /* JSZTableViewCell.m */,
+				CF1A8A841E5EDCDA001DC6F0 /* JSZTableViewCell */,
+				CF1A8A831E5EDCD0001DC6F0 /* ProgressButton */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -143,6 +154,42 @@
 				CF1A8A6B1E5ED3E0001DC6F0 /* LaunchScreen.storyboard */,
 			);
 			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		CF1A8A7F1E5EDAFA001DC6F0 /* Extensiones */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A801E5EDB02001DC6F0 /* UIColor+HexRGB.h */,
+				CF1A8A811E5EDB02001DC6F0 /* UIColor+HexRGB.m */,
+			);
+			name = Extensiones;
+			sourceTree = "<group>";
+		};
+		CF1A8A831E5EDCD0001DC6F0 /* ProgressButton */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A851E5EDCEA001DC6F0 /* JNJProgressButton.h */,
+				CF1A8A861E5EDCEA001DC6F0 /* JNJProgressButton.m */,
+			);
+			name = ProgressButton;
+			sourceTree = "<group>";
+		};
+		CF1A8A841E5EDCDA001DC6F0 /* JSZTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A791E5ED79B001DC6F0 /* JSZTableViewCell.h */,
+				CF1A8A7A1E5ED79B001DC6F0 /* JSZTableViewCell.m */,
+			);
+			name = JSZTableViewCell;
+			sourceTree = "<group>";
+		};
+		CF1A8A881E5EE2B6001DC6F0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CF1A8A891E5EE2EB001DC6F0 /* BackgroundSessionManager.h */,
+				CF1A8A8A1E5EE2EB001DC6F0 /* BackgroundSessionManager.m */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 		F1E0769214D0B752A68897BD /* Frameworks */ = {
@@ -279,7 +326,10 @@
 				CF1A8A651E5ED3E0001DC6F0 /* ViewController.m in Sources */,
 				CF1A8A621E5ED3E0001DC6F0 /* AppDelegate.m in Sources */,
 				CF1A8A5F1E5ED3E0001DC6F0 /* main.m in Sources */,
+				CF1A8A8B1E5EE2EB001DC6F0 /* BackgroundSessionManager.m in Sources */,
 				CF1A8A7B1E5ED79B001DC6F0 /* JSZTableViewCell.m in Sources */,
+				CF1A8A871E5EDCEA001DC6F0 /* JNJProgressButton.m in Sources */,
+				CF1A8A821E5EDB02001DC6F0 /* UIColor+HexRGB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +488,7 @@
 				CF1A8A731E5ED3E0001DC6F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
