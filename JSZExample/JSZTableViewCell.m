@@ -129,7 +129,7 @@
 {
     //Se tiene que eliminar el podcast
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.statusLabel.text = @"Sin descargar";
+        self.progressLabel.text = @"Sin descargar";
         [self.downloadButton restartButton];
     });
 }
